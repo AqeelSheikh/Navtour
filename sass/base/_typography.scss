@@ -1,0 +1,159 @@
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400px;
+    line-height: 1.7rem;
+    /* font-size: 16px; */
+    color:$color-grey-dark;
+  
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+  
+    &--main{
+      display: block;
+      font-size: 6rem;
+      letter-spacing: 3.5rem;
+      font-weight: 400px;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      /* animation-delay: 2s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 3; */
+      @include respond(phone){
+        letter-spacing: 1rem;
+        font-family: 1rem;
+        line-height: .5rem;
+        
+      }
+    
+    }
+    &--sub{
+      @include respond(phone){
+        letter-spacing: .5rem;
+        font-family: 4rem;
+      
+        line-height: .5rem;
+      }
+      display: block;
+      font-size: 2rem;
+      letter-spacing: 1rem;
+      margin-top: 5rem;
+      font-weight: 700px;
+      animation:moveInRight 1s ease-out ;
+      
+    }
+  }
+  .heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    padding: 2rem;
+    background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port){
+      font-size: 3rem;
+      line-height: 3rem;
+      
+    }
+    @include respond(phone){
+      font-family: 1.5rem;
+      line-height: 3rem;
+    }
+    &:hover{
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+text-shadow: .5rem 1rem 2rem rgba($color-black,.2);// x,y,blurr,(color.opacity)
+    }
+  }
+  .heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+  color: $color-primary;
+  @include respond(tab-port){
+    font-size: 3rem;
+    line-height: 3rem;
+    
+  }
+  @include respond(phone){
+    font-family: 1.5rem;
+    line-height: 3rem;
+   
+   
+  }
+  }
+  .heading-quad{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    @include respond(tab-port){
+      font-size: 3rem;
+      line-height: 3rem;
+      
+    }
+    @include respond(phone){
+      font-family: 1.5rem;
+      line-height: 3rem;
+    }
+    &:hover{
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+text-shadow: .5rem 1rem 2rem rgba($color-black,.2);// x,y,blurr,(color.opacity)
+    }
+  }
+  .heading-tetra{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    @include respond(tab-port){
+      font-size: 3rem;
+      line-height: 3rem;
+      
+    }
+    @include respond(phone){
+      font-family: 1.5rem;
+      line-height: 3rem;
+    }
+    &:hover{
+transform: skewY(2deg) skewX(15deg) scale(1.1);
+text-shadow: .5rem 1rem 2rem rgba($color-black,.2);// x,y,blurr,(color.opacity)
+    }
+  }
+  .paragraph{
+    font-size: $default-font-size;
+padding-right: 6.5rem;
+text-align: justify;
+
+
+&:not(:last-child){
+  margin-bottom: 3rem;
+
+}
+  }
